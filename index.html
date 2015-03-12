@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz App</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="//use.typekit.net/edy2aat.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="inner">
+			<div class="initial-state">
+				<h1>Tasty Stories</h1>
+				<p>If you love good TV series and cuisine, this is the Quiz for you! How much do you remember about these food- related topics on TV?</p>
+				<button type="button" id="start">Get started!</button>
+			</div>
+			<div class="question-state">
+				<h1 class="question">What's the favorite food of Frank Underwood in House of Cards?</h1>
+				<form>
+					<ul class="options-list">
+						<li class="options-list__item">
+							<input id="option01" type="radio" name="option" value="fried-chicken">
+							<label for="option01">Fried Chicken</label>
+						</li>
+						<li class="options-list__item">
+							<input id="option02" type="radio" name="option" value="hamburger">
+							<label for="option02">Hamburger</label>
+						</li>
+						<li class="options-list__item">
+							<input id="option03" type="radio" name="option" value="ribs">
+							<label for="option03">Ribs</label>
+						</li>
+						<li class="options-list__item">
+							<input id="option04" type="radio" name="option" value="steak">
+							<label for="option04">Steak</label>
+						</li>
+						<input id="submitButton" class="button" type="submit" value="Submit">
+					</ul>
+				</form>
+			</div>
+			<div class="answer-state"></div>
+			<div class="end-state-winning"></div>
+			<div class="end-state-losing"></div>
+
+		</div>
+	</div>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
